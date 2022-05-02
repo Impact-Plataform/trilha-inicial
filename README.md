@@ -1,7 +1,5 @@
 # Plataforma Impact - Trilha Iniciantes
 
-### [PDF Do Currículo](https://drive.google.com/drive/u/1/folders/1vMnTAaHfoJoe3LwKL_ZUN9K4vV6-Fvmq) 
-
 **Modulo 1**
 
 Objetivo: Iniciar o aluno nos estudos de desenvolvimento Web.
@@ -13,11 +11,11 @@ Fontes de Conteúdo: DIO [D], MDN Web Docs [M], Youtube [Y] e W3 Schools [W]
 ### Conteúdo Principal
 
 - **.Iniciando no desenvolvimento web (1hr 30min)**
-    - Como a internet chega na minha casa [[Y]](https://youtu.be/F74GKCLXUWM?t=138)
-    - Como a internet funciona [[Y]](https://youtu.be/nlO5hySqJFA?t=116)
-    - O que é domínio e hospedagem [[Y]](https://youtu.be/RFHSt1PCy0k?t=102)
-    - A diferença entre HTML, CSS e JavaScript [[Y]](https://youtu.be/B4FU3NFRTDw?t=6)
-    - Instalando todas as Ferramentas [[Y]](https://www.youtube.com/watch?v=UForX7ehChM)
+    - [***Como a internet chega na minha casa***](https://youtu.be/F74GKCLXUWM?t=138)
+    - [***Como a internet funciona***](https://youtu.be/nlO5hySqJFA?t=116)
+    - ***[O que é domínio e hospedagem](https://youtu.be/RFHSt1PCy0k?t=102)***
+    - [***A diferença entre HTML, CSS e JavaScript***](https://youtu.be/B4FU3NFRTDw?t=6)
+    - [***Instalando todas as Ferramentas***](https://www.youtube.com/watch?v=UForX7ehChM)
 - **[DIO - Introdução a HTML5 e CSS3 (2hr 30min)](https://web.dio.me/course/introducao-criacao-de-websites-com-html5-e-css3/learning/462f831d-5fdf-485e-bf07-1d391eb94ac8/?back=/browse)**
 - **[DIO - Responsividade e experiência do usuário (1hr 30 min)](https://web.dio.me/course/conceitos-de-responsividade-e-experiencia-do-usuario-1/learning/9261b941-1d0e-4984-8757-4e2bd8f42ae0/?back=/browse)**
 - [**DIO - Posicionando elementos com Flexbox em CSS**](https://web.dio.me/course/posicionando-elementos-com-flexbox-em-css/learning/46f1e8c7-ef6e-458e-ad4e-369fc65faba7/?back=/browse)
@@ -27,26 +25,26 @@ Fontes de Conteúdo: DIO [D], MDN Web Docs [M], Youtube [Y] e W3 Schools [W]
 - **Conteúdo Adicional**
     - HTML
         - **Trabalhando com texto em HTML**
-            - Paragrafos e Quebras de linha [[Y]](https://youtu.be/f6NTJdtEFOc?t=117)
-            - Símbolos e Emoji no seu site [[Y]](https://youtu.be/nhMdFe3WwYc?t=126)
+            - [**Paragrafos e Quebras de linha**](https://youtu.be/f6NTJdtEFOc?t=117)
+            - [***Símbolos e Emoji no seu site***](https://youtu.be/nhMdFe3WwYc?t=126)
         - **Manipulando Imagens para usar em sites**
-            - Você tem o direito de usar qualquer imagem no seu site? [[Y]](https://youtu.be/bDULqeGEvAw?t=156)
-            - Quais são os formatos para imagens na Web? [[Y]](https://youtu.be/xg-vHgLF0mI?t=145)
-            - O tamanho das imagens importa para um site? [[Y]](https://youtu.be/8rkuukKA8a4?t=128)
-            - A tag img em HTML5 [[Y]](https://youtu.be/CwOmEetWMnU?t=152)
-            - Como mudar o favicon de um site [[Y]](https://youtu.be/1ZeettFfxys?t=168)
+            - ***[Você tem o direito de usar qualquer imagem no seu site?](https://youtu.be/bDULqeGEvAw?t=156)***
+            - [***Quais são os formatos para imagens na Web?***](https://youtu.be/xg-vHgLF0mI?t=145)
+            - [***O tamanho das imagens importa para um site?***](https://youtu.be/8rkuukKA8a4?t=128)
+            - [***A tag img em HTML5***](https://youtu.be/CwOmEetWMnU?t=152)
+            - [***Como mudar o favicon de um site***](https://youtu.be/1ZeettFfxys?t=168)
         - **Trabalhando com Links em HTML**
-            - Links e Ancoras em HTML [[Y]](https://www.youtube.com/watch?v=LeOVXQDsAIY)
-            - Links internos [[Y]](https://youtu.be/LeLnlT-ZKw8?t=119)
-            - Links para Downloads [[Y]](https://youtu.be/Jszz7M676y8?t=135)
+            - [***Links e Ancoras em HTML***](https://www.youtube.com/watch?v=LeOVXQDsAIY)
+            - [***Links internos***](https://youtu.be/LeLnlT-ZKw8?t=119)
+            - [***Links para Downloads***](https://youtu.be/Jszz7M676y8?t=135)
         - [**W3 Schools - HTML Documentation**](https://w3schools.com/html/default.asp)
         - **[Youtube - Landing Page com Html & Css(1hr)](https://www.youtube.com/watch?v=llF6vD-RljE)**
     - CSS
-        - CSS Inline [[Y]](https://youtu.be/byqhpuVpvEI?t=165)
-        - CSS Interno [[Y]](https://youtu.be/fzyab4P2pn8?t=136)
-        - CSS Externo [[Y]](https://youtu.be/-i1JVMspDJQ?t=132)
-        - Seletores CSS [[Y]](https://www.youtube.com/watch?v=ahYHSBue7wE)
-        - CSS: Seletores e Especificidade [[Y]](https://www.youtube.com/watch?v=dPL23aVRIlc)
+        - [***CSS Inline***](https://youtu.be/byqhpuVpvEI?t=165)
+        - [***CSS Interno***](https://youtu.be/fzyab4P2pn8?t=136)
+        - [***CSS Externo***](https://youtu.be/-i1JVMspDJQ?t=132)
+        - [***Seletores CSS***](https://www.youtube.com/watch?v=ahYHSBue7wE)
+        - [***CSS: Seletores e Especificidade***](https://www.youtube.com/watch?v=dPL23aVRIlc)
         - **[W3 Schools - CSS Documentation](https://www.w3schools.com/css/)**
         - [**MDN Web Docs - Design Responsivo**](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Responsive_Design)
 
@@ -76,9 +74,13 @@ Fontes de Conteúdo: *Alura [A]*
 
 - Lógica de Programação
     
-    [**Lógica de programação: o que é e porque é tão importante?**](https://kenzie.com.br/blog/logica-de-programacao/)
+    **[Lógica de programação: o que é e porque é tão importante?](https://www.alura.com.br/artigos/algoritmos-e-logica-de-programacao?gclid=Cj0KCQjw06OTBhC_ARIsAAU1yOW4CKbbU-ZNXEucgf--U0Cf-HLBkFB2XBZPsPJ0t0Y9rkaTNLLybzcaAo4VEALw_wcB)**
     
-     - Artigo proprio
+    [**Operadores matemáticos, de comparação, condicionais e lógicos**](https://woliveiras.com.br/posts/operadores-matem%C3%A1ticos-de-compara%C3%A7%C3%A3o-condicionais-e-l%C3%B3gicos/)
+    
+    **[Laços de repetição: while e do... while](https://woliveiras.com.br/posts/la%C3%A7os-de-repeti%C3%A7%C3%A3o-while-e-do-while/)**
+    
+    **[Laços de repetição: for, for...in, for...of](https://woliveiras.com.br/posts/la%C3%A7os-de-repeti%C3%A7%C3%A3o-for-for-in-for-of/)**
     
 - ****[Sintaxe Básica em JavaScript](https://web.dio.me/course/sintaxe-basica-em-javascript/learning/780c7e66-bc21-401f-b3ea-c844898b3614?back=/browse) - 2h**
 - ****[DOM - Document Object Model](http://devfuria.com.br/javascript/dom/)****
@@ -130,11 +132,11 @@ Fontes de Conteúdo: Fundação Bradesco [B], Artigos [T], Youtube [Y] e Aulas A
     - Editando e deletando valores em tabelas [T]
     - Cruzando dados relacionais entre tabelas [T]
 - **.API’s e Protocolo de comunicação HTTP [Y]**
-    - O que é HTTP [[Y]](https://www.youtube.com/watch?v=hwttZtWkXTk)
-    - O que é uma API [[Y]](https://www.youtube.com/watch?v=vGuqKIRWosk)
+    - [***O que é HTTP***](https://www.youtube.com/watch?v=hwttZtWkXTk)
+    - [***O que é uma API***](https://www.youtube.com/watch?v=vGuqKIRWosk)
 - **.Programação Orientada a Objetos - Estrutura de dados e Tipagem**
-    - O que é Programação orientada a objetos [[Y]](https://www.youtube.com/watch?v=QY0Kdg83orY)
-    - Introdução a programação orientada a Objetos [[B]](https://www.ev.org.br/cursos/introducao-a-programacao-orientada-a-objetos-poo)
+    - [***O que é Programação orientada a objetos***](https://www.youtube.com/watch?v=QY0Kdg83orY)
+    - [***Introdução a programação orientada a Objetos***](https://www.ev.org.br/cursos/introducao-a-programacao-orientada-a-objetos-poo)
 - **.Desenvolvendo uma Api [P]**
     - Entendendo NodeJS **[P]**
     - Criando a Estrutura do projeto **[P]**
@@ -147,14 +149,14 @@ Fontes de Conteúdo: Fundação Bradesco [B], Artigos [T], Youtube [Y] e Aulas A
 
 ### Conteúdo Adicional
 
-- O que é API REST [[T]](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
-- O que é MVC [[T]](https://www.lewagon.com/pt-BR/blog/o-que-e-padrao-mvc#:~:text=O%20MVC%20%C3%A9%20uma%20sigla,sejam%20mais%20r%C3%A1pidas%20e%20din%C3%A2micas.)
-- Banco de dados Relacional x Não Relacional [[T]](https://blog.debugeverything.com/pt/diferenca-base-de-dados-relacional-e-nao-relacional/)
+- [***O que é API REST***](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
+- [***O que é MVC***](https://www.lewagon.com/pt-BR/blog/o-que-e-padrao-mvc#:~:text=O%20MVC%20%C3%A9%20uma%20sigla,sejam%20mais%20r%C3%A1pidas%20e%20din%C3%A2micas.)
+- [***Banco de dados Relacional x Não Relacional***](https://blog.debugeverything.com/pt/diferenca-base-de-dados-relacional-e-nao-relacional/)
 
 ### **Primeiro Projeto: *Prática***
 
 - [Github Link] - Projeto de inventário
-- Prazo: 7 dias
+- Prazo: 18 dias
 - Avaliação:
     - Apresentar o projeto para os Jedis
     - Mandar o projeto pelo menos um dia antes da apresentação
@@ -164,7 +166,3 @@ Fontes de Conteúdo: Fundação Bradesco [B], Artigos [T], Youtube [Y] e Aulas A
 - https://github.com/Impact-Plataform/backend-desafios01
 
 _______________________________________________________________________
-
-[Processo Seletivo ](Plataforma%2076494/Processo%20S%2038836.md)
-
-[Website Copy ](Plataforma%2076494/Website%20Co%20d9c8a.md)
