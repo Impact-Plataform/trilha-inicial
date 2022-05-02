@@ -1,0 +1,675 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Plataforma Impact - Trilha Iniciantes</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="7649468a-4008-4a0d-b829-24a7e850d0a8" class="page mono"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/nasa_space_shuttle_columbia.jpg" style="object-position:center 30.000000000000004%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Plataforma%20Impact%20-%20Trilha%20Iniciantes%207649468a40084a0db82924a7e850d0a8/PLATAFORMA_LOGO_F_COLOR_SECONDARY_1_REV_copy.jpg"/></div><h1 class="page-title">Plataforma Impact - Trilha Iniciantes</h1></header><div class="page-body"><h2 id="67d78e34-cf0a-4b0e-8b78-e424e1560630" class=""><a href="https://drive.google.com/drive/u/1/folders/1vMnTAaHfoJoe3LwKL_ZUN9K4vV6-Fvmq">
+</a>
+<mark class="highlight-blue"><strong>Modulo 1 </strong></mark></h2><p id="fe735d46-2d18-47fa-9df4-7300a596218e" class="">Objetivo: Iniciar o aluno nos estudos de desenvolvimento Web.</p><p id="97acde1d-f3f9-46cb-8c28-c2b3ce67bf79" class="">Duração: <em>1 mês</em></p><p id="3c6970a4-348c-4442-9cf3-3776cc04ff35" class="">Fontes de Conteúdo: DIO [D], MDN Web Docs [M], Youtube [Y] e W3 Schools [W]</p><h3 id="b1562d97-a03d-4917-b08f-efdc4ca0c7b3" class=""><details open=""><summary><mark class="highlight-blue">Conteúdo Principal </mark></summary></details></h3><div class="indented"><ul id="c16dbaa0-a193-4a36-a8ee-c5ea69410732" class="toggle"><li><details open=""><summary><strong>.Iniciando no desenvolvimento web (1hr 30min)</strong></summary><ul id="446d606a-c65b-4c00-bcae-6a61dfae2efb" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/F74GKCLXUWM?t=138">Como a internet chega na minha casa</a></strong></em></li></ul><ul id="89b36bbb-7b0b-4bf1-8d04-57ae2951e01f" class="bulleted-list"><li style="list-style-type:disc"><strong><em><a href="https://youtu.be/nlO5hySqJFA?t=116">Como a internet funciona</a></em></strong></li></ul><ul id="d5ed49ca-3625-47b7-927c-ac4aff98be56" class="bulleted-list"><li style="list-style-type:disc"><a href="https://youtu.be/RFHSt1PCy0k?t=102"><em><strong>O que é domínio e hospedagem</strong></em></a></li></ul><ul id="a7bb7022-9cd5-4a61-9962-ff7fba8353e0" class="bulleted-list"><li style="list-style-type:disc"><strong><em><a href="https://youtu.be/B4FU3NFRTDw?t=6">A diferença entre HTML, CSS e JavaScript</a></em></strong></li></ul><ul id="89e44f74-8d2c-4c31-a647-d171f4f61fd8" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://www.youtube.com/watch?v=UForX7ehChM">Instalando todas as Ferramentas</a></strong></em></li></ul></details></li></ul><ul id="60eb540c-ef41-4026-b5b1-35c77d5238fe" class="bulleted-list"><li style="list-style-type:disc"><a href="https://web.dio.me/course/introducao-criacao-de-websites-com-html5-e-css3/learning/462f831d-5fdf-485e-bf07-1d391eb94ac8/?back=/browse"><strong>DIO - Introdução a HTML5 e CSS3 (2hr 30min)</strong></a></li></ul><ul id="94b8dcbc-6635-40ed-9be8-79f3e0fb784d" class="bulleted-list"><li style="list-style-type:disc"><a href="https://web.dio.me/course/conceitos-de-responsividade-e-experiencia-do-usuario-1/learning/9261b941-1d0e-4984-8757-4e2bd8f42ae0/?back=/browse"><strong>DIO - Responsividade e experiência do usuário (1hr 30 min)</strong></a></li></ul><ul id="e94bb06e-7d3b-40a7-ae0c-e76f9be8d93d" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://web.dio.me/course/posicionando-elementos-com-flexbox-em-css/learning/46f1e8c7-ef6e-458e-ad4e-369fc65faba7/?back=/browse">DIO - Posicionando elementos com Flexbox em CSS</a></strong></li></ul><ul id="348a4c1a-2a91-49db-8f68-50ac732ee1bc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://web.dio.me/course/crie-paginas-responsivas-na-web-utilizando-um-poderoso-framework/learning/d5695916-44d4-4d47-9db4-0bc829264835/?back=/browse"><strong>DIO - Construindo páginas para internet com Bootstrap (2hr 30min)</strong></a><strong> </strong></li></ul><ul id="9992b9ef-6d87-4270-9686-1d194fdff404" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.napratica.org.br/comunicacao-nao-violenta/"><strong><strong>O que é Comunicação Não-Violenta (CNV)</strong></strong></a></li></ul><ul id="db7a18eb-dc14-4335-a8c2-139225bc812a" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://conteudo.movidesk.com/o-que-e-comunicacao-assertiva/">Comunicação Assertiva</a></strong></li></ul></div><ul id="d1cfbf46-c623-4ec2-9577-54c0b27689c9" class="toggle"><li><details open=""><summary><strong><mark class="highlight-blue">Conteúdo Adicional </mark></strong></summary><ul id="0f7ee920-3be8-4774-b74d-4af90ba88cbf" class="toggle"><li><details open=""><summary>HTML</summary><ul id="d5d8617c-9dad-47f8-a217-b110fc794b50" class="toggle"><li><details open=""><summary><strong>Trabalhando com texto em HTML</strong></summary><ul id="2a4c09c0-56f8-4c4b-9f54-7a2293f85a88" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://youtu.be/f6NTJdtEFOc?t=117">Paragrafos e Quebras de linha</a></strong></li></ul><ul id="be81769b-bc72-412d-887e-64a08617e1b8" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/nhMdFe3WwYc?t=126">Símbolos e Emoji no seu site</a></strong></em></li></ul></details></li></ul><ul id="a7f8e6b6-bfa0-4404-9c17-d82a1ec5c084" class="toggle"><li><details open=""><summary><strong>Manipulando Imagens para usar em sites</strong></summary><ul id="1adc0f7a-2953-47f8-a5fc-50bb9a21cd8c" class="bulleted-list"><li style="list-style-type:disc"><a href="https://youtu.be/bDULqeGEvAw?t=156"><em><strong>Você tem o direito de usar qualquer imagem no seu site?</strong></em></a></li></ul><ul id="9245a23b-ed4f-4678-9079-6e6adcb9ae8f" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/xg-vHgLF0mI?t=145">Quais são os formatos para imagens na Web?</a></strong></em></li></ul><ul id="7c7fc0ce-6a46-4e63-8933-68e4583679d2" class="bulleted-list"><li style="list-style-type:disc"><strong><em><a href="https://youtu.be/8rkuukKA8a4?t=128">O tamanho das imagens importa para um site?</a></em></strong></li></ul><ul id="ca495880-3419-4bf4-9731-e37f8b6a290c" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/CwOmEetWMnU?t=152">A tag img em HTML5</a></strong></em></li></ul><ul id="8f585cb3-dd37-433f-8984-375630c3f329" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/1ZeettFfxys?t=168">Como mudar o favicon de um site</a></strong></em></li></ul></details></li></ul><ul id="f2e1d048-0ccf-4407-8f47-2f22ee91e9fe" class="toggle"><li><details open=""><summary><strong>Trabalhando com Links em HTML</strong></summary><ul id="e670747c-045a-41e7-b727-053e3505d549" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://www.youtube.com/watch?v=LeOVXQDsAIY">Links e Ancoras em HTML</a></strong></em></li></ul><ul id="0ba682fd-d54f-4e8d-a577-2538d59bde97" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/LeLnlT-ZKw8?t=119">Links internos </a></strong></em></li></ul><ul id="9a84379b-4b25-48ff-9def-e127b05e869d" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/Jszz7M676y8?t=135">Links para Downloads</a></strong></em></li></ul></details></li></ul><ul id="c2ba1e94-1782-4295-abba-265c9f03397d" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://w3schools.com/html/default.asp">W3 Schools - HTML Documentation</a></strong></li></ul><ul id="1274e65e-c91b-4ae4-a994-1426532b987e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=llF6vD-RljE"><strong>Youtube - Landing Page com Html &amp; Css(1hr)</strong></a></li></ul></details></li></ul><ul id="ef6c846c-1d58-4f59-8ea9-0ccb43d80ec5" class="toggle"><li><details open=""><summary>CSS</summary><ul id="8c57e3d3-06de-4a58-afd9-05622ab45a8f" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/byqhpuVpvEI?t=165">CSS Inline</a></strong></em></li></ul><ul id="e5fd4085-f8c7-4bde-bf81-deb23150ebc5" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/fzyab4P2pn8?t=136">CSS Interno</a></strong></em></li></ul><ul id="e8f4d0a6-b4ea-4d9a-b0ba-13dbf450640e" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://youtu.be/-i1JVMspDJQ?t=132">CSS Externo</a></strong></em></li></ul><ul id="d7eb930c-87cc-4e75-8d9a-97943f1d5962" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://www.youtube.com/watch?v=ahYHSBue7wE">Seletores CSS</a></strong></em></li></ul><ul id="de9b6476-8f03-4436-92ba-cf084279e594" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://www.youtube.com/watch?v=dPL23aVRIlc">CSS: Seletores e Especificidade</a></strong></em></li></ul><ul id="138dd7a3-4a07-4158-875b-2e3547afdf44" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.w3schools.com/css/"><strong>W3 Schools - CSS Documentation</strong></a></li></ul><ul id="67ab59e0-bc3e-476e-8dec-167579b3fa5a" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Responsive_Design">MDN Web Docs - Design Responsivo</a></strong></li></ul></details></li></ul></details></li></ul><h3 id="7a57a473-662d-451f-866c-aaeb5e4d1991" class=""><mark class="highlight-blue"><strong>Primeiro Projeto: </strong></mark><mark class="highlight-blue"><em><strong>Prática</strong></em></mark><mark class="highlight-blue"><strong> </strong></mark></h3><ul id="997e5593-8431-46b7-b994-99893e16bade" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/Impact-Plataform/frontend-projeto01">https://github.com/Impact-Plataform/frontend-projeto01</a></li></ul><ul id="e034c687-6a9d-4ca5-adaf-ecd49695dffc" class="bulleted-list"><li style="list-style-type:disc">Prazo: 7 dias</li></ul><ul id="c8a51d06-b1df-4949-8c7e-c06f1398707a" class="bulleted-list"><li style="list-style-type:disc">Avaliação:<ul id="d616deb7-315d-4e8d-be53-2b707be89d10" class="bulleted-list"><li style="list-style-type:circle">Apresentar o projeto para os Jedis</li></ul><ul id="42f36e62-10f0-4002-a313-00009e46ee12" class="bulleted-list"><li style="list-style-type:circle">Mandar o projeto pelo menos um dia antes da apresentação</li></ul></li></ul><h3 id="e2946b0a-a94c-4499-99f4-f4ef91a1e4e8" class=""><mark class="highlight-blue">Bônus (Tarefas/Desafios):</mark></h3><ul id="795e5322-5265-48ed-aab1-38f224d1fda7" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/Impact-Plataform/frontend-desafios01">https://github.com/Impact-Plataform/frontend-desafios01</a></li></ul><p id="a0e5693f-5891-4a1f-94ff-10481551cd8a" class="">_______________________________________________________________________</p><h2 id="3f206b9e-d373-4650-bdde-9dbd682b771a" class=""><mark class="highlight-orange"><strong>Modulo 2</strong></mark></h2><p id="04253be4-cb76-4526-8041-a08b32cfe7b0" class="">Objetivo: <em>Desenvolver as habilidades soft junto com as técnicas, montar </em><span style="border-bottom:0.05em solid"><em>site interativo</em></span></p><p id="eb57576e-c7cd-48bf-969a-a12690777d91" class="">Duração: <em>6 semanas</em></p><p id="1f0105d7-a395-4a7d-9ec8-d278e04e8d81" class="">Fontes de Conteúdo: <em>Alura [A]</em></p><h3 id="3da1d7b8-470f-4cf6-b6a3-a16cfe2967e1" class=""><details open=""><summary><mark class="highlight-orange">Conteúdo  </mark></summary></details></h3><div class="indented"><ul id="6236a0a1-3894-471b-9069-464ed53e7f0c" class="toggle"><li><details open=""><summary>Lógica de Programação</summary><p id="2f81b696-b8e8-4f5c-badc-24dc7352d945" class=""><a href="https://www.alura.com.br/artigos/algoritmos-e-logica-de-programacao?gclid=Cj0KCQjw06OTBhC_ARIsAAU1yOW4CKbbU-ZNXEucgf--U0Cf-HLBkFB2XBZPsPJ0t0Y9rkaTNLLybzcaAo4VEALw_wcB"><strong>Lógica de programação: o que é e porque é tão importante?</strong></a></p><p id="59288f3f-399d-42a1-8c1f-0630b6ff560f" class=""><strong><a href="https://woliveiras.com.br/posts/operadores-matem%C3%A1ticos-de-compara%C3%A7%C3%A3o-condicionais-e-l%C3%B3gicos/">Operadores matemáticos, de comparação, condicionais e lógicos</a></strong></p><p id="3ba3aa82-af3f-407b-9de0-e78298ed3616" class=""><a href="https://woliveiras.com.br/posts/la%C3%A7os-de-repeti%C3%A7%C3%A3o-while-e-do-while/"><strong>Laços de repetição: while e do... while</strong></a></p><p id="caa7b70d-5b4a-41ea-b59d-df57b9d0b856" class=""><a href="https://woliveiras.com.br/posts/la%C3%A7os-de-repeti%C3%A7%C3%A3o-for-for-in-for-of/"><strong>Laços de repetição: for, for...in, for...of</strong></a></p></details></li></ul><ul id="5b7cca62-2ddf-4a7a-b9e2-41a7b34ac0a4" class="bulleted-list"><li style="list-style-type:disc"><a href="https://web.dio.me/course/sintaxe-basica-em-javascript/learning/780c7e66-bc21-401f-b3ea-c844898b3614?back=/browse"><strong><strong>Sintaxe Básica em JavaScript</strong></strong></a><strong><strong> - 2h</strong></strong></li></ul><ul id="aaf0a5da-96d4-4d2b-af54-f3a0f542832f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://devfuria.com.br/javascript/dom/"><strong><strong>DOM - Document Object Model</strong></strong></a></li></ul><ul id="8bd03141-ff51-4b9d-8919-ebf23eb7db6c" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=UftSB4DaRU4"><strong>Manipulação de DOM</strong></a><strong> - 1h 30min</strong></li></ul><ul id="d8c0ac3f-7a15-458e-8370-c8232d4b3a95" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.treinaweb.com.br/blog/quando-usar-sessionstorage-e-localstorage"><strong>SessionStorage e LocalStorage</strong></a></li></ul><ul id="621988b7-fc27-4c84-9a4e-bb2af5487fc5" class="bulleted-list"><li style="list-style-type:disc"><a href="https://medium.com/@matheusml/o-guia-do-es6-tudo-que-voc%C3%AA-precisa-saber-8c287876325f"><strong><strong>O Guia do ES6</strong></strong></a><strong><strong> → Pular a parte sobre o Babel</strong></strong></li></ul><p id="0515ee3a-b01a-4307-9b61-42a5831f3c4e" class="">
+</p><ul id="84a9d94c-7015-48ab-9774-ef576187a768" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://web.dio.me/course/introducao-ao-git-e-ao-github/learning/75b9fe49-6ed4-4480-83a7-7e37fc356aa9/?back=/browse">Dio - Introdução ao Git e ao Github</a></strong></li></ul><ul id="b180a35b-d712-4500-8d00-c03b83cc549a" class="bulleted-list"><li style="list-style-type:disc"><a href="https://web.dio.me/course/git-e-github-focado-em-pullrequest/learning/7ee9e586-a200-41de-a075-fd6a7b4b5a1e/?back=/browse"><strong>Dio - Git e Github focado em pull request</strong></a></li></ul><p id="dadb7ed1-25b3-4454-b4c0-326a802de604" class="">
+</p><ul id="b19ca6bc-fe34-45b6-8287-2cef6b495209" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=5ByWvpW2zw0&amp;ab_channel=BlogAbriMinhaEmpresa"><strong>Metodologia Ágil (Para Que Serve e Como Funciona?)</strong></a></li></ul><ul id="c236b2f1-9fbe-479c-8738-1ff08d2455b3" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.liceudeoratoria.com.br/o-orador-e-o-compartilhamento-de-si-mesmo/"><strong>Oratória - Compartilhar ideias</strong></a></li></ul><p id="293d248c-9f86-43ad-938f-5322e72bb408" class="">
+</p></div><ul id="aab27da8-7a35-4ec8-b811-a4540f943982" class="toggle"><li><details open=""><summary><strong><mark class="highlight-orange">Conteúdo Adicional</mark></strong><mark class="highlight-orange">   </mark></summary><ul id="3a0ab032-7d09-4d40-b3fd-5cb525a4c59a" class="toggle"><li><details open=""><summary>JavaScript </summary><ul id="a8ecb938-62c1-4d72-8b3c-c49514c64217" class="bulleted-list"><li style="list-style-type:disc"><a href="https://web.dio.me/course/jquery-essencial/learning/3b07becd-4b8c-4538-ae36-532dc6b27866/?back=/browse"><strong><strong>Introdução à biblioteca jQuery</strong></strong></a></li></ul><ul id="850094be-d442-46a7-96ff-a34134db2d3a" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.youtube.com/watch?v=ArTVfdHOB-M">Navigation Menu Indicator using Html CSS &amp; Javascript</a></strong></li></ul><ul id="718e835f-29e5-44c2-a9e0-65d05772e0bc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.w3schools.com/js/"><strong>W3 Schools - Javascript Documentation</strong></a></li></ul></details></li></ul></details></li></ul><h3 id="56bf0c42-888d-42e0-aa05-b8615b6f5d67" class=""><mark class="highlight-orange">Segundo Projeto (Prática)</mark></h3><p id="fd91c5dc-3f6f-4843-98b9-32731bbcd370" class="">Requisitos: Montar um site interativo que responde a comandos do usuário. Upar o projeto para um repositório pessoal no github</p><ul id="5c947188-4a38-44c4-a37e-5771045984cc" class="bulleted-list"><li style="list-style-type:disc">Prazo: 12 dias</li></ul><ul id="521a13ed-03a7-46a7-ac4e-20967f5cb5f0" class="bulleted-list"><li style="list-style-type:disc">Avaliação:<ul id="8a81ce0a-17e0-4dcb-820d-a70a7cfd27d9" class="bulleted-list"><li style="list-style-type:circle">Apresentar o projeto para os Jedis</li></ul><p id="f65c9809-03cf-4dc7-90dc-81c9453f30e4" class="">Mandar o repositório pelo menos um dia antes da apresentação</p></li></ul><h3 id="bddeed77-6d7a-4a4c-bc6a-d00934700fe4" class=""><mark class="highlight-orange"><strong>Bônus (Tarefas/Desafios):</strong></mark></h3><p id="8c04a2d8-777e-4ab9-96cf-68732022fd34" class="">_______________________________________________________________________</p><h2 id="09999a9a-e231-4a77-99e7-68c611ac5e9a" class=""><strong>Modulo 3</strong></h2><p id="d3f6bc38-cfdd-432d-afd5-eda7fd6cfa21" class="">Objetivo: Apresentar conceitos de desenvolvimento de API’s e programação orientada a objetos.</p><p id="489f9837-b921-48aa-a9c2-f788353391f8" class="">Duração: <em>1 mês</em></p><p id="74c98e82-e8d8-4116-b11f-4554def9f824" class="">Fontes de Conteúdo: Fundação Bradesco [B], Artigos [T], Youtube [Y] e Aulas Assíncronas[P]<div class="indented"><h3 id="e559dda4-9153-4949-a011-a0cd54d27042" class="">Conteúdo (Alura)</h3></div></p><ul id="f45263ba-2a18-43df-a468-fc3972e1f3f2" class="bulleted-list"><li style="list-style-type:disc"><strong>.Banco de dados e SQL</strong><ul id="17169516-8447-43ff-9b4b-331268a3c5b6" class="bulleted-list"><li style="list-style-type:circle">O que é um Banco de Dados [Y]</li></ul><ul id="450beb25-886b-4aa3-b924-1a6ebebe94e5" class="bulleted-list"><li style="list-style-type:circle">Criando tabelas e tipos de dados [T]</li></ul><ul id="adacebf8-6727-49b5-90a4-5a7eaec716d3" class="bulleted-list"><li style="list-style-type:circle">Inserindo e fazendo consultas simples em tabelas [T]</li></ul><ul id="0462f75a-f2c5-4a09-9f55-fe069a70ba63" class="bulleted-list"><li style="list-style-type:circle">Editando e deletando valores em tabelas [T]</li></ul><ul id="c0e74061-30f2-4a1c-9d86-4d5fbfd0125f" class="bulleted-list"><li style="list-style-type:circle">Cruzando dados relacionais entre tabelas [T]</li></ul></li></ul><ul id="1382d9b1-dd28-48fd-b0e2-7071c794df59" class="bulleted-list"><li style="list-style-type:disc"><strong>.API’s e Protocolo de comunicação HTTP [Y]</strong><ul id="bb167f83-ae06-4d3a-a737-c8f24f92705c" class="bulleted-list"><li style="list-style-type:circle"><em><strong><a href="https://www.youtube.com/watch?v=hwttZtWkXTk">O que é HTTP</a></strong></em></li></ul><ul id="2bea60a2-301d-4d72-8034-236ef18afadd" class="bulleted-list"><li style="list-style-type:circle"><strong><em><a href="https://www.youtube.com/watch?v=vGuqKIRWosk">O que é uma API</a></em></strong></li></ul></li></ul><ul id="ef4726ad-81a6-45ba-bf00-edf2b720b9b1" class="bulleted-list"><li style="list-style-type:disc"><strong>.Programação Orientada a Objetos - Estrutura de dados e Tipagem</strong><ul id="63bdd7c3-c62b-4dbf-a227-4aa42cdecf13" class="bulleted-list"><li style="list-style-type:circle"><em><strong><a href="https://www.youtube.com/watch?v=QY0Kdg83orY">O que é Programação orientada a objetos</a></strong></em></li></ul><ul id="fc8d1b3f-e55f-4aab-a713-206bf68cafe4" class="bulleted-list"><li style="list-style-type:circle"><em><strong><a href="https://www.ev.org.br/cursos/introducao-a-programacao-orientada-a-objetos-poo">Introdução a programação orientada a Objetos</a></strong></em></li></ul></li></ul><ul id="79f38d66-4528-4162-a585-c8f73cfdb1bf" class="bulleted-list"><li style="list-style-type:disc"><strong>.Desenvolvendo uma Api [P]</strong><ul id="372f8148-3836-4e81-afd7-dd6e727a4770" class="bulleted-list"><li style="list-style-type:circle">Entendendo NodeJS <strong>[P]</strong></li></ul><ul id="8bd7ba4c-cf9d-4f1e-9b36-603293dc351d" class="bulleted-list"><li style="list-style-type:circle">Criando a Estrutura do projeto<strong> [P]</strong></li></ul><ul id="983d44bd-7ecf-4b40-8d0c-a33d0ed1a65f" class="bulleted-list"><li style="list-style-type:circle">Instalando dependencias e criando as tabelas<strong> [P]</strong></li></ul><ul id="d65cf3c7-7cba-434e-9b7f-3b4ce9405082" class="bulleted-list"><li style="list-style-type:circle">Definindo as rotas<strong> [P]</strong></li></ul><ul id="aad5fead-2f28-4092-9043-c3529032db74" class="bulleted-list"><li style="list-style-type:circle">Create<strong> [P]</strong></li></ul><ul id="85e224d4-4497-4c7f-85df-9ce93ca3f4db" class="bulleted-list"><li style="list-style-type:circle">Read<strong> [P]</strong></li></ul><ul id="49b2a63d-fdee-4e83-b984-17b5cd914485" class="bulleted-list"><li style="list-style-type:circle">Update<strong> [P]</strong></li></ul><ul id="0741fefc-97a8-4035-96fd-481e27ded590" class="bulleted-list"><li style="list-style-type:circle">Delete<strong> [P]</strong></li></ul></li></ul><h3 id="a2602434-2901-4b4f-8195-f8ce91ebb90f" class="">Conteúdo Adicional<mark class="highlight-blue"> </mark></h3><ul id="468d0467-e22a-4aab-984a-c80621c459a6" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api"><mark class="highlight-blue"> </mark></a></strong></em><em><strong><a href="https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api">O que é API REST</a></strong></em></li></ul><ul id="71b4bb09-ab9c-419e-9682-605d5f641008" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://www.lewagon.com/pt-BR/blog/o-que-e-padrao-mvc#:~:text=O%20MVC%20%C3%A9%20uma%20sigla,sejam%20mais%20r%C3%A1pidas%20e%20din%C3%A2micas."> O que é MVC</a></strong></em></li></ul><ul id="51d7b753-0add-440f-bc22-98c911890db0" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://blog.debugeverything.com/pt/diferenca-base-de-dados-relacional-e-nao-relacional/"> Banco de dados Relacional x Não Relacional</a></strong></em></li></ul><h3 id="5fb0f485-b0b6-406a-a3a6-6d444d58f272" class=""><strong>Primeiro Projeto: </strong><em><strong>Prática</strong></em><strong> </strong></h3><ul id="898d1d72-4f7a-4d87-99f7-204de04814be" class="bulleted-list"><li style="list-style-type:disc"> [Github Link] - Projeto de inventário</li></ul><ul id="d964bda1-6633-442c-87e1-0dccbe3b3c6a" class="bulleted-list"><li style="list-style-type:disc">Prazo: 18 dias</li></ul><ul id="f5190a9f-7e1c-45bb-864c-9e153fbcd2c5" class="bulleted-list"><li style="list-style-type:disc">Avaliação:<ul id="7e3a7ea4-b593-47c1-8ff5-b0ee94230614" class="bulleted-list"><li style="list-style-type:circle">Apresentar o projeto para os Jedis</li></ul><ul id="827a466e-c873-4f2c-ad78-ddb62a238180" class="bulleted-list"><li style="list-style-type:circle">Mandar o projeto pelo menos um dia antes da apresentação</li></ul></li></ul><h3 id="f2681c26-5847-4f2f-abfc-da0bd562f525" class="">Bônus (Tarefas/Desafios):</h3><p id="5588bb0f-3216-4e5f-9c69-6701389523ad" class="">
+</p><ul id="0c75d884-315c-421f-86b5-21d8bf6bc8bc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/Impact-Plataform/backend-desafios01">https://github.com/Impact-Plataform/backend-desafios01</a></li></ul><p id="e1f5f7ff-015c-47b1-aa10-0445656e3424" class="">_______________________________________________________________________</p></div></article></body></html>
