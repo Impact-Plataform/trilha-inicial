@@ -1,0 +1,9 @@
+.container .card {
+  height: 420px;
+}
+
+.container .card .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -60px;
+}
