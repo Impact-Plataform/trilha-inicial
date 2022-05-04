@@ -18,6 +18,7 @@ Fontes de Conteúdo: DIO [D], MDN Web Docs [M], Youtube [Y] e W3 Schools [W]
     - [***Instalando todas as Ferramentas***](https://www.youtube.com/watch?v=UForX7ehChM)
 - **[DIO - Introdução a HTML5 e CSS3 (2hr 30min)](https://web.dio.me/course/introducao-criacao-de-websites-com-html5-e-css3/learning/462f831d-5fdf-485e-bf07-1d391eb94ac8/?back=/browse)**
 - **[DIO - Responsividade e experiência do usuário (1hr 30 min)](https://web.dio.me/course/conceitos-de-responsividade-e-experiencia-do-usuario-1/learning/9261b941-1d0e-4984-8757-4e2bd8f42ae0/?back=/browse)**
+- - **[Aprendendo HTML do básico ao avançado (1hr 30 min)](https://youtu.be/MOhY97_47_s?t=143)**
 - [**DIO - Posicionando elementos com Flexbox em CSS**](https://web.dio.me/course/posicionando-elementos-com-flexbox-em-css/learning/46f1e8c7-ef6e-458e-ad4e-369fc65faba7/?back=/browse)
 - **[DIO - Construindo páginas para internet com Bootstrap (2hr 30min)](https://web.dio.me/course/crie-paginas-responsivas-na-web-utilizando-um-poderoso-framework/learning/d5695916-44d4-4d47-9db4-0bc829264835/?back=/browse)**
 - ****[O que é Comunicação Não-Violenta (CNV)](https://www.napratica.org.br/comunicacao-nao-violenta/)****
