@@ -1,0 +1,79 @@
+html {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 15vh;
+}
+
+span {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.main .content>ul {
+  padding: 0 25px;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+details ul {
+  padding: 5px 50px;
+}
+
+details {
+  cursor: pointer;
+}
+
+.main {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 50px 150px;
+  box-sizing: border-box;
+}
+
+.main .section {
+  color: white;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 80vh;
+}
+
+.main .section .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 3px solid var(--orange);
+}
+
+.main .section .nav .bi {
+  width: 50px;
+  height: 50px;
+  transition: .3s ease;
+}
+
+.main .section .nav .bi:hover {
+  cursor: pointer;
+  color: var(--orange)
+}
+
+.main .content {
+  padding: 100px 50px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.theme {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 15px;
+  transition: .3s ease;
+}
