@@ -18,6 +18,7 @@ Fontes de Conteúdo: DIO [D], MDN Web Docs [M], Youtube [Y] e W3 Schools [W]
     - [***Instalando todas as Ferramentas***](https://www.youtube.com/watch?v=UForX7ehChM)
 - **[DIO - Introdução a HTML5 e CSS3 (2hr 30min)](https://web.dio.me/course/introducao-criacao-de-websites-com-html5-e-css3/learning/462f831d-5fdf-485e-bf07-1d391eb94ac8/?back=/browse)**
 - **[Aprendendo HTML do básico ao avançado (1hr 30 min)](https://youtu.be/MOhY97_47_s?t=143)**
+- **[Aprendendo CSS do básico ao avançado (1hr 30 min)](https://youtu.be/r11FflkQqJs?t=94)**
 - **[Responsividade na Pratica (1hr 30 min)](https://www.youtube.com/watch?v=H91DhKPjhPk)**
 - [**DIO - Posicionando elementos com Flexbox em CSS (4hrs)**](https://web.dio.me/course/posicionando-elementos-com-flexbox-em-css/learning/46f1e8c7-ef6e-458e-ad4e-369fc65faba7/?back=/browse)
 
