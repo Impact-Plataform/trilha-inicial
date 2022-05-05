@@ -26,7 +26,6 @@ details {
 }
 
 .main {
-  overflow:auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,8 +33,12 @@ details {
   padding: 50px 150px;
   box-sizing: border-box;
 }
-
+summary{
+  font-weight: 900;
+  font-size: 2.2rem;
+}
 .main .section {
+  overflow-y:auto;
   color: white;
   font-size: 2rem;
   display: grid;

@@ -1,3 +1,6 @@
+html {
+  overflow: hidden;
+}
 .container{
   position: relative;
   height: 700px;
