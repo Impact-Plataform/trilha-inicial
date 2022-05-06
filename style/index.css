@@ -8,10 +8,11 @@ html {
   max-width: 1100px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
   align-items: center;
 }
+
 ul {
   list-style: none;
 }
@@ -26,11 +27,11 @@ ul {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .container .card:hover{
-  height: 500px;
+  height:auto;
 }
 
 .container .card .imgBx{
@@ -45,7 +46,7 @@ ul {
 
 .container .card .imgBx img{
   max-width: 100%;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .container .card .content{
@@ -73,7 +74,23 @@ ul {
 .container .card .content .topicos li{
   margin: 10px 0;
 }
+
 h2{
   font-size: 2.5rem;
   color: var(--orange);
+}
+@media screen and (max-width: 712px){
+  .container{
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 1050px){
+  .card {
+    width: 200px;
+  }
+  .container .card .imgBx{
+    width: 200px;
+    height: 200px;
+    left: 0px;
+  }
 }
